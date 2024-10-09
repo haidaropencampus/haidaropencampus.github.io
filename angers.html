@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Étudiant oc</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            justify-content: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        header img {
+            height: 60px;
+            width: auto;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff6600;
+            border-radius: 5px;
+        }
+
+        /* Container Styles */
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            color: #ff6600;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .section a {
+            display: inline-block;
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #ff6600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .section a:hover {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+          /* Responsive Design */
+          @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+                margin-top: 10px;
+            }
+
+            header img {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .section h2 {
+                font-size: 1.6em;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+
+            .section a {
+                font-size: 16px;
+                padding: 8px 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            nav a {
+                font-size: 14px;
+                margin: 5px 0;
+                padding: 8px 15px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .section h2 {
+                font-size: 1.4em;
+            }
+
+            .section a {
+                font-size: 14px;
+                padding: 6px 15px;
+            }
+
+            header h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <img src="logo.png" alt="Logo Université">
+        <h1>Portail Étudiant OC Angers</h1>
+        <p></p>
+    </header>
+
+    <nav>
+        <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=162&ct=1728463331&rver=7.5.2211.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26deeplink%3dowa%252f%26RpsCsrfState%3d3d20cc43-248a-924d-ff2f-a0db3d8d8ea4&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c" target="_blank">Messagerie Scolaire</a>
+        <a href="https://planning.angers.globalopencampus.com/angers-24-25/etudiant" target="_blank">Hyperplanning</a>
+        <a href="https://edusign.app/student/" target="_blank">Edusign</a>
+        <a href="https://portal.academicsoftware.com/software" target="_blank">Logiciels Académiques</a>
+        <a href="https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638640609507653609.ODc5ZTM0Y2EtMDU4Mi00ODFkLWExOTItOGZlM2JjZmQ1NTliZGNiMmE0NGUtNzI3Ny00YTkzLTk3OTAtMjM5NGU3ZmFhYzFi&ui_locales=fr-FR&mkt=fr-FR&login_hint=haidar.esber%40angers.globalopencampus.com&msafed=0&client-request-id=1c0704ae-8fe5-4e66-8139-63adeba1bf4e&state=rCygitWaNok2xRayyjxegZdo89LQ9k9up46BRfzKg5ldvAHaqynrLGydGFH_sGPXmrv_kUE_4gURraKsqTspDCAdm5QCEi-huz512bCq-x_-wmtjzUr4RKMm4cUffJOFHrL1BTpM056v9dxrv9gYpm1VVeypLRwjQTvFts796aqqJzz9LHTIXEb2anfNe8tmxSgGibYetl5_pnjnRFn9s8akicVI8KvUHZ5hS5I5Th-4h201wqj7IokF4FEQBNkmf9bHddYhqeGVyAACLdGFvcwzIu4m-5YtN6B5nS90m62bqMXzktsanEfxKshJLssXsSTHGvA8K2TLQK745hxTGS5QHBtPqJhA24trH9EAkfmxy_zXkYt6WlONZoG1QUTz&x-client-SKU=ID_NET8_0&x-client-ver=7.5.1.0" target="_blank">Office 365</a>
+        
+        
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <h2>Messagerie Scolaire</h2>
+            <p>Accédez à votre boîte de réception scolaire pour consulter vos courriels universitaires et rester informé de toutes les communications importantes.</p>
+            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=162&ct=1728463331&rver=7.5.2211.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26deeplink%3dowa%252f%26RpsCsrfState%3d3d20cc43-248a-924d-ff2f-a0db3d8d8ea4&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c" target="_blank">Accéder à la Messagerie Scolaire</a>
+        </div>
+        <div class="section">
+            <h2>Hyperplanning</h2>
+            <p>Consultez vos emplois du temps et les plannings des examens via Hyperplanning. Vérifiez régulièrement pour toute mise à jour.</p>
+            <a href="https://planning.angers.globalopencampus.com/angers-24-25/etudiant" target="_blank">Accéder à Hyperplanning</a>
+        </div>
+        <div class="section">
+            <h2>Edusign</h2>
+            <p>Connectez-vous à Edusign pour soumettre vos devoirs, signer les feuilles de présence, et plus encore. Assurez-vous de respecter les délais !</p>
+            <a href="https://edusign.app/student/" target="_blank">Accéder à Edusign</a>
+        </div>
+        <div class="section">
+            <h2>Academic Software</h2>
+            <p>Téléchargez et accédez à tous les logiciels nécessaires pour vos études. Cliquez ci-dessous pour découvrir vos outils académiques.</p>
+            <a href="https://portal.academicsoftware.com/software" target="_blank">Découvrir les Logiciels Académiques</a>
+        </div>
+
+        <div class="section">
+            <h2>Office 365</h2>
+            <p>Collaborez avec vos camarades et travaillez sur vos projets grâce à Office 365. Connectez-vous avec vos identifiants universitaires.</p>
+            <a href="https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638640609507653609.ODc5ZTM0Y2EtMDU4Mi00ODFkLWExOTItOGZlM2JjZmQ1NTliZGNiMmE0NGUtNzI3Ny00YTkzLTk3OTAtMjM5NGU3ZmFhYzFi&ui_locales=fr-FR&mkt=fr-FR&login_hint=haidar.esber%40angers.globalopencampus.com&msafed=0&client-request-id=1c0704ae-8fe5-4e66-8139-63adeba1bf4e&state=rCygitWaNok2xRayyjxegZdo89LQ9k9up46BRfzKg5ldvAHaqynrLGydGFH_sGPXmrv_kUE_4gURraKsqTspDCAdm5QCEi-huz512bCq-x_-wmtjzUr4RKMm4cUffJOFHrL1BTpM056v9dxrv9gYpm1VVeypLRwjQTvFts796aqqJzz9LHTIXEb2anfNe8tmxSgGibYetl5_pnjnRFn9s8akicVI8KvUHZ5hS5I5Th-4h201wqj7IokF4FEQBNkmf9bHddYhqeGVyAACLdGFvcwzIu4m-5YtN6B5nS90m62bqMXzktsanEfxKshJLssXsSTHGvA8K2TLQK745hxTGS5QHBtPqJhA24trH9EAkfmxy_zXkYt6WlONZoG1QUTz&x-client-SKU=ID_NET8_0&x-client-ver=7.5.1.0" target="_blank">Accéder à Office 365</a>
+        </div>
+        </div>
+        
+
+       
+    <footer>
+        <p>&copy; 2024 Groupe Open Campus - Tous droits réservés </p>
+    </footer>
+
+</body>
+</html>
